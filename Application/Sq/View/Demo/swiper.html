@@ -1,0 +1,245 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_swiper" data-id="demo_swiper">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">轮播图</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <p class="content-block-tip m-b-d">如果是JS渲染的swiper组件，则需要执行$.initSwiper()进行初始化；</p>
+                    <p class="content-block-tip m-b-d">如果是JS重新渲染的swiper组件，则需要执行$.reinitSwiper()进行重新初始化；</p>
+                    <p class="content-block-tip m-b-d">以下的例子没做JS渲染演示，可自行尝试；</p>
+                    <h1 class="content-block-title">自动循环图片轮播（无分页器，2秒轮播）</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_11" data-autoplay="2000"
+                             data-autoplay-disable-on-interaction="false" data-loop="true">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/091.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/092.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/093.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/094.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/095.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">自动循环图片轮播（带分页器，3秒轮播）</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_12"
+                             data-pagination=".swiper_12 .swiper-pagination" data-autoplay="3000"
+                             data-autoplay-disable-on-interaction="false" data-loop="true">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/091.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/092.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/093.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/094.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="lazy-load" src="{:C('LAZY_LOAD_DEFAULT_IMG')}" data-src="__PUBLIC__/images/demo/095.jpg">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">手动循环背景图轮播（带分页器）</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_21" data-loop="true"
+                             data-pagination=".swiper_21 .swiper-pagination">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">手动不循环背景图轮播（带3D翻页特效）</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_22" data-effect="coverflow"
+                             data-pagination=".swiper_22 .swiper-pagination">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">手动不循环背景图轮播（可点击预览）</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_23" data-effect="coverflow"
+                             data-pagination=".swiper_23 .swiper-pagination">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="0" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="1" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="2" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="3" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="4" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">手动循环背景图轮播（可点击预览）</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_24" data-effect="coverflow" data-loop="true"
+                             data-pagination=".swiper_24 .swiper-pagination">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="0" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="1" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="2" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="3" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-pw-index="4" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                            </div>
+                            <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/096.jpg">
+                            <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/097.jpg">
+                            <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/098.jpg">
+                            <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/099.jpg">
+                            <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/100.jpg">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">轮播——点击事件</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_31" data-id="swiper_31" data-effect="coverflow" data-loop="true"
+                             data-pagination=".swiper_31 .swiper-pagination">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">轮播——滑动事件</h1>
+                    <div class="content-block">
+                        <div class="swiper-container swiper_32" data-id="swiper_32" data-effect="coverflow" data-loop="true"
+                             data-pagination=".swiper_32 .swiper-pagination">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">横铺轮播</h1>
+                    <div class="content-block">
+                        {/*
+                        data-space-between：swiper-slide之间的间距；
+                        data-slides-per-view：swiper-slide显示的数量；
+                        data-free-mode：是否开启惯性模式；
+                        */}
+                        <div class="swiper-container swiper_41" data-space-between="5" data-slides-per-view="2.5" data-free-mode="false">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/001.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/002.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/003.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/004.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/005.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/006.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/007.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/008.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/009.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/010.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/011.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/012.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/013.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/014.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/015.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/016.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/017.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/018.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/019.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/020.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">横铺轮播——惯性模式</h1>
+                    <div class="content-block">
+                        {/*
+                        data-space-between：swiper-slide之间的间距；
+                        data-slides-per-view：swiper-slide显示的数量；
+                        data-free-mode：是否开启惯性模式；
+                        */}
+                        <div class="swiper-container swiper_42" data-space-between="3" data-slides-per-view="3.5" data-free-mode="true">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/001.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/002.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/003.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/004.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/005.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/006.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/007.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/008.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/009.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/010.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/011.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/012.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/013.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/014.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/015.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/016.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/017.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/018.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/019.jpg"></div>
+                                <div class="swiper-slide bg-lazy-load" data-src="__PUBLIC__/images/demo/020.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="content-block-title">横向滑动内容</h1>
+                    <div class="content-block transverse-list">
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/001.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/002.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/003.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/004.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/005.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/006.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/007.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/008.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/009.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/010.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/011.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/012.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/013.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/014.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/015.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/016.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/017.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/018.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/019.jpg"></div>
+                        <div class="transverse-item bg-lazy-load m-r-m" data-src="__PUBLIC__/images/demo/020.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

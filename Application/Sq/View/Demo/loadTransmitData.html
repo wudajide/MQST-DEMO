@@ -1,0 +1,40 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_transmit_data" data-id="demo_load_transmit_data">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">页面间传递数据测试页</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <h1 class="content-block-title">传递数据测试A</h1>
+                    <div class="content-block">
+                        <p class="content-block-tip m-b-d">传递数据默认只能获取一次，所以这里第二次获取传递数据为空</p>
+                        <a href="{:U('Demo/loadTransmitDataA')}" class="button button-big m-b-s">传递数据测试页A</a>
+                        <button class="button button-big btn_get_a m-b-s">获取测试页A传递数据</button>
+                        <p class="content-block-tip btn_get_a_data m-b-d"></p>
+                    </div>
+                    <h1 class="content-block-title">传递数据测试B</h1>
+                    <div class="content-block">
+                        <p class="content-block-tip m-b-d">传递数据设置为保留，所以这里第二次执行时传递数据仍然存在</p>
+                        <a href="{:U('Demo/loadTransmitDataB',array('id'=>23))}" class="button button-big m-b-s">传递数据测试页B（参数：id=23）</a>
+                        <a href="{:U('Demo/loadTransmitDataB',array('id'=>52))}" class="button button-big m-b-s">传递数据测试页B（参数：id=52）</a>
+                        <button class="button button-big btn_get_b m-b-s">获取测试页B传递数据</button>
+                        <p class="content-block-tip btn_get_b_data m-b-d"></p>
+                    </div>
+                    <h1 class="content-block-title">模拟页面传递数据测试</h1>
+                    <div class="content-block">
+                        <p class="content-block-tip m-b-d">模拟页面传递数据，无需真实存在页面</p>
+                        <button class="button button-big btn_simulate m-b-s">模拟页面传递数据</button>
+                        <button class="button button-big btn_get_simulate m-b-s">获取模拟页面传递数据</button>
+                        <p class="content-block-tip btn_get_simulate_data m-b-d"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

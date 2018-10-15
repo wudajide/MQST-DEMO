@@ -1,0 +1,22 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_back2" data-id="demo_load_back2">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">页面多级返回测试页</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="content-block">
+                        <button class="button button-big btn_back2 m-b-s">$.router.back(-2);</button>
+                        <button class="button button-big btn_back3 m-b-s">$.router.back(-3);</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

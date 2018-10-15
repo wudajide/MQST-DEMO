@@ -1,0 +1,16 @@
+<script src="__PUBLIC__/aes/aes.min.js?v={:C('SQ_VERSION')}"></script>
+<script src="__PUBLIC__/ui/js/ui.min.js?v={:C('SQ_VERSION')}"></script>
+<script src="__PUBLIC__/ui/js/ui-ext.min.js?v={:C('SQ_VERSION')}"></script>
+<eq name="Think.config.MODULE_COMPRESSION_MODE" value="1">
+    <script src="__PUBLIC__/js/mqst.min.js?v={:C('SQ_VERSION')}"></script>
+    <script src="__PUBLIC__/js/module.min.js?v={:C('SQ_VERSION')}"></script>
+    <script src="__PUBLIC__/js/library.min.js?v={:C('SQ_VERSION')}"></script>
+    <else/>
+    <script src="__PUBLIC__/js/mqst.js?v={:C('SQ_VERSION')}"></script>
+    <script src="__PUBLIC__/js/module.js?v={:C('SQ_VERSION')}"></script>
+    <script src="__PUBLIC__/js/library.js?v={:C('SQ_VERSION')}"></script>
+</eq>
+<block name="script"></block>
+<block name="js"></block>
+</body>
+</html>

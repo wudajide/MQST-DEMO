@@ -1,0 +1,51 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_page" data-id="demo_load_page">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">跳转页面</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <h1 class="content-block-title">页面返回</h1>
+                    <p class="content-block-tip m-b-d">1、goBack();，如果页面有弹出模态框，则关闭弹出模态框，否则返回上一页；</p>
+                    <p class="content-block-tip m-b-d">2、$.router.back();，直接返回上一页；</p>
+                    <p class="content-block-tip m-b-d">3、A标签中class="back"，直接返回上一页；</p>
+                    <p class="content-block-tip m-b-d">4、$.custom.correctPages.push('中间页的page_id');$.router.back(-2);，返回前两页，并清除中间页的缓存数据；</p>
+                    <p class="content-block-tip m-b-d">5、$.custom.correctPages.push('中间第N-1页的page_id','中间第N-2页的page_id',...);$.router.back(-N);，返回前N页，并清除中间页的缓存数据；</p>
+                    <p class="content-block-tip m-b-d">6、goHome();,直接跳转回首页，并清除非首页的所有缓存数据，首页的URL地址储存在key为[前缀]_sq_index_url的cookie中；</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadBack')}" class="button button-big m-b-s">页面返回测试页</a>
+                    </div>
+                    <h1 class="content-block-title">页面间传递数据</h1>
+                    <p class="content-block-tip m-b-d">setPageData：设置页面的传递数据；</p>
+                    <p class="content-block-tip m-b-d">getPageData：获取页面的传递数据；</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadTransmitData')}" class="button button-big m-b-s">页面间传递数据测试页</a>
+                    </div>
+                    <h1 class="content-block-title">带唯一ID参数页面跳转</h1>
+                    <p class="content-block-tip m-b-d">带唯一ID参数的页面，需要设置class="page"的标签属性id="[page_id]"和data-id="[page_id_唯一ID参数]"，才能保证页面的唯一性（与当前页面的URL相同的链接不会跳转）</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadTest',array('id'=>1))}" class="button button-big m-b-s">测试页（参数：id=1）</a>
+                    </div>
+                    <h1 class="content-block-title">多路径至目标页面问题</h1>
+                    <p class="content-block-tip m-b-d">解决目标页面中，根据不同来源页面，执行不同的返回事件</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadMultipath')}" class="button button-big m-b-s">多路径至目标测试页</a>
+                    </div>
+                    <h1 class="content-block-title">原生跳转页面</h1>
+                    <p class="content-block-tip m-b-d">如果希望一个链接走浏览器原生跳转而不使用内置js路由，可以在链接上增加class="external"或者自定义属性external</p>
+                    <p class="content-block-tip m-b-d">如果希望一个区域内的链接都走浏览器原生跳转而不使用js路由，可以在某个区域的上增加class="disable-router"</p>
+                    <p class="content-block-tip m-b-d">原生跳转不会有翻页效果，并且会使之前页面保存的关联数据丢失（包括：js滚动页面位置、setPageData函数保存的页面传递数据等）</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadExternal')}" class="button button-big m-b-s">原生跳转测试页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

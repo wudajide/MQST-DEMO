@@ -1,0 +1,124 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_inline_test1" data-id="demo_inline_test1">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">内联测试页_1</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100" data-inline="home">
+                <div class="content-inner">
+                    <div class="inline-page inline-home">
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是首页最后一行~</p>
+                    </div>
+                    <div class="inline-page inline-me hide">
+                        <p class="content-block-tip m-t-l m-b-l">我是ME的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是ME的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是ME的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是ME的最后一行~</p>
+                    </div>
+                    <div class="inline-page inline-star hide">
+                        <p class="content-block-tip m-t-l m-b-l">我是收藏的内容~</p>
+                        <div class="content-block infinite-star-data">
+                            {/*---Tpl/inlineTest1/infiniteStarData.tpl---*/}
+                        </div>
+                    </div>
+                    <div class="inline-page inline-cart hide">
+                        <p class="content-block-tip m-t-l m-b-l">我是购物车的内容~</p>
+                        <div class="content-block infinite-cart-data">
+                            {/*---Tpl/inlineTest1/infiniteCartData.tpl---*/}
+                        </div>
+                    </div>
+                    <div class="inline-page inline-settings hide">
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <h1 class="content-block-title">手动循环背景图轮播（可点击预览）</h1>
+                        <div class="content-block">
+                            <div class="swiper-container swiper_settings" data-effect="coverflow" data-loop="true"
+                                 data-pagination=".swiper_settings .swiper-pagination">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide bg-lazy-load" data-pw-index="0" data-src="__PUBLIC__/images/demo/096.jpg"></div>
+                                    <div class="swiper-slide bg-lazy-load" data-pw-index="1" data-src="__PUBLIC__/images/demo/097.jpg"></div>
+                                    <div class="swiper-slide bg-lazy-load" data-pw-index="2" data-src="__PUBLIC__/images/demo/098.jpg"></div>
+                                    <div class="swiper-slide bg-lazy-load" data-pw-index="3" data-src="__PUBLIC__/images/demo/099.jpg"></div>
+                                    <div class="swiper-slide bg-lazy-load" data-pw-index="4" data-src="__PUBLIC__/images/demo/100.jpg"></div>
+                                </div>
+                                <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/096.jpg">
+                                <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/097.jpg">
+                                <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/098.jpg">
+                                <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/099.jpg">
+                                <input type="hidden" class="swiper_pw" data-src="__PUBLIC__/images/demo/100.jpg">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                        <p class="content-block-tip m-t-l m-b-l">我是设置的内容~</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="bar bar-tab clear">
+                <button class="tab-item fl active" data-item="home">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </button>
+                <button class="tab-item fl" data-item="me">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">我的</span>
+                    <span class="badge">2</span>
+                </button>
+                <button class="tab-item fl" data-item="star">
+                    <span class="icon icon-star"></span>
+                    <span class="tab-label">收藏</span>
+                    <span class="badge">99+</span>
+                </button>
+                <button class="tab-item fl" data-item="cart">
+                    <span class="icon icon-cart"></span>
+                    <span class="tab-label">购物车</span>
+                </button>
+                <button class="tab-item fl" data-item="settings">
+                    <span class="icon icon-settings"></span>
+                    <span class="tab-label">设置</span>
+                </button>
+            </nav>
+        </div>
+    </div>
+</block>
+

@@ -1,0 +1,15 @@
+<for start="$last_index" end="$last_index+$count">
+    <div class="infinite-item card facebook-card" data-index="{$i}">
+        <div class="card-header no-border">
+            <div class="facebook-avatar bg-lazy-load" data-src="__PUBLIC__/images/demo/{$i|str_pad=3,'0',STR_PAD_LEFT}.jpg"></div>
+            <div class="facebook-name">咪喵</div>
+            <div class="facebook-date">星期天 1:34pm</div>
+        </div>
+        <div class="card-content bg-lazy-load" data-src="__PUBLIC__/images/demo/{$i+50|str_pad=3,'0',STR_PAD_LEFT}.jpg"></div>
+        <div class="card-footer no-border">
+            <a href="#" class="link">点赞</a>
+            <a href="#" class="link">评论</a>
+            <a href="#" class="link">分享</a>
+        </div>
+    </div>
+</for>

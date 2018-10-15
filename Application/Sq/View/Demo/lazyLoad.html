@@ -1,0 +1,30 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_lazy_load" data-id="demo_lazy_load">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">图片懒加载</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <h1 class="content-block-title">普通图片懒加载</h1>
+                    <p class="content-block-tip m-b-d">适合自适应大小的图片布局</p>
+                    <p class="content-block-tip m-b-d">&lt;img class="lazy-load" src="[DEFAULT_URL]" data-src="[IMG_URL]"&gt;</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/lazyLoadImg')}" class="button button-big btn_lazy_load_1 m-b-s">普通图片懒加载</a>
+                    </div>
+                    <h1 class="content-block-title">背景图片懒加载</h1>
+                    <p class="content-block-tip m-b-d">适合固定宽高的图片布局</p>
+                    <p class="content-block-tip m-b-d">&lt;div class="bg-lazy-load" data-src="[IMG_URL]"&gt;&lt;/div&gt;</p>
+                    <div class="content-block">
+                        <a href="{:U('Demo/lazyLoadBgImg')}" class="button button-big btn_lazy_load_2 m-b-s">背景图片懒加载</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

@@ -1,0 +1,59 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="login_index" data-id="login_index">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">登录</h1>
+            </header>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="contain">
+                        <form class="list-block login_form">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">帐号：</div>
+                                            <div class="item-input">
+                                                <input type="text" name="account" placeholder="请输入帐号">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-password"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">密码：</div>
+                                            <div class="item-input">
+                                                <input type="password" name="password" placeholder="请输入密码">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                        <div class="content-block">
+                            <div class="row">
+                                <div class="col-50">
+                                    <a class="button button-default button-danger back">取消</a>
+                                </div>
+                                <div class="col-50">
+                                    <div class="button button-default button-success login_btn">登录</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-padded">
+                            <p>测试账号：test</p>
+                            <p>测试密码：456123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

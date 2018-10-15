@@ -1,0 +1,25 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_back" data-id="demo_load_back">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">页面返回测试页</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="content-block">
+                        <button class="button button-big btn_back_1 m-b-s">goBack();</button>
+                        <button class="button button-big btn_back_2 m-b-s">$.router.back();</button>
+                        <button class="button button-big btn_home m-b-s">goHome();</button>
+                        <a class="button button-big back m-b-s">A标签返回</a>
+                        <a href="{:U('Demo/loadBack2')}" class="button button-big m-b-s">页面多级返回测试页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

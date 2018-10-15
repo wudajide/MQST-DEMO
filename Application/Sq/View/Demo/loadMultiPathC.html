@@ -1,0 +1,20 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_multi_path_c" data-id="demo_load_multi_path_c">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">测试页C</h1>
+            </header>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadMultiPathD',array('from'=>'demo_load_multi_path_b,demo_load_multi_path_c'))}" class="button button-big m-b-s">C->D->A</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

@@ -1,0 +1,21 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="address_citys" data-id="address_citys">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">选择地区</h1>
+            </header>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="citys-list">
+                        <volist name="city_list" id="vo">
+                            <div class="citys-item" data-id="{$vo.area_id}" data-code="{$vo.area_code}" data-href="{:U('Address/districts',array('pid'=>$vo['area_id']))}">{$vo.area_city}</div>
+                        </volist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

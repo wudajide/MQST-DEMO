@@ -1,0 +1,28 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_device" data-id="demo_device">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">设备侦测</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <h1 class="content-block-title">你是设备信息（$.device）</h1>
+                    <p class="content-block-tip device-info m-b-d"></p>
+                    <h1 class="content-block-title">版本比较函数</h1>
+                    <p class="content-block-tip m-b-d">（本机版本号：$.device.osVersion）</p>
+                    <p class="content-block-tip m-b-d">1、参数一大于参数二，返回1；</p>
+                    <p class="content-block-tip m-b-d">例如：$.compareVersion('8.0', '7.1.1')</p>
+                    <p class="content-block-tip m-b-d">2、参数一等于参数二，返回0；</p>
+                    <p class="content-block-tip m-b-d">例如：$.compareVersion('5.0', '5.0')</p>
+                    <p class="content-block-tip m-b-d">3、参数一小于参数二，返回-1；</p>
+                    <p class="content-block-tip m-b-d">例如：$.compareVersion('4.2', '4.4')</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

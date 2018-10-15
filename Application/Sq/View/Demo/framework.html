@@ -1,0 +1,100 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_framework" data-id="demo_framework">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">基础框架</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <p class="content-block-tip">MQST（Mobile Quick Simple To Thinkphp）是基于THINKPHP3.2框架之上的一个移动端架构解决方案，可流畅运行于几乎市面上所有的手机浏览器，亦可内嵌于APP中，对于需要频繁更新功能活动的APP来说也是个不错的选择。</p>
+                    <p class="content-block-tip">（有关于THINKPHP3.2的资料，开发者们可自行在网上查阅，不在这里说明）</p>
+                    <h1 class="content-block-title">目录文件结构说明</h1>
+                    <pre class="content-block-tip">
+Application
+  ├ Common
+  │   └ View
+  │       └  Sq
+  │           ├ base.tpl.html
+  │           │  （基础模版）
+  │           ├ footer.tpl.html
+  │           │  （底部模版：需要在页面底部引入的文件可以添加在这里）
+  │           ├ header.tpl.html
+  │           │  （头部模版：需要在页面头部引入的文件或meta可以添加在这里）
+  │           └ js_var.tpl.html
+  │               （常量传递模版：用于将PHP中的模版常量传递至JS变量）
+  └ Sq
+     ├ Common
+     │    ├ BaseController.class.php
+     │    │  （基控制器）
+     │    └ function.php
+     │        （公共函数库）
+     ├ Conf
+     │   ├ config.php
+     │   │  （主配置文件）
+     │   ├ db.php
+     │   │  （发布版数据库配置文件）
+     │   ├ sq_config.php
+     │   │  （发布版配置文件）
+     │   ├ test_db.php
+     │   │  （测试版数据库配置文件）
+     │   └ test_sq_config.php
+     │       （测试版配置文件）
+     ├ Controller
+     │   ├ CommonController.class.php
+     │   │  （公共控制器）
+     │   ├ IndexController.class.php
+     │   │  （首页控制器）
+     │   ├ DemoController.class.php
+     │   │  （Demo控制器）
+     │   ├ LoginController.class.php
+     │   │  （登录控制器）
+     │   └ AddressController.class.php
+     │       （选择地址控制器）
+     └ View
+          ├ Public
+          │  （公共视图模版文件目录）
+          ├ Index
+          │  （首页视图模版文件目录）
+          ├ Demo
+          │  （Demo视图模版文件目录）
+          ├ Login
+          │  （登录视图模版文件目录）
+          └ Address
+              （选择地址视图模版文件目录）
+Public
+  ├ css
+  │ ├ mqst.css
+  │ │  （全局通用定义样式）
+  │ └ module.css
+  │     （页面自定义样式）
+  ├ js
+  │ ├ config.js
+  │ │  （头部预加载js配置文件）
+  │ ├ library.js
+  │ │  （全局时间库文件）
+  │ ├ mqst.js
+  │ │  （全局通用函数库文件）
+  │ └ module.js
+  │     （页面自定义事件文件）
+  ├ images
+  │ （资源图片目录）
+  ├ ui
+  │ （核心UI库目录）
+  ├ aes
+  │ （aes加密插件目录）
+  ├ velocity
+  │ （velocity动画库目录）
+  └ zepto
+     （zepto移动端开发库目录）
+
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

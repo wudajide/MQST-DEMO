@@ -1,0 +1,15 @@
+<script>
+    (function(){
+        //方便下面的JS中调用PHP模版变量
+        MY_VAR = {
+            "AES_KEY"                   :   "{:C('AES_KEY')}",
+            "CNZZ_TRACK"                :   "{:C('CNZZ_TRACK')}",
+            "BAIDU_MAP_AK"              :   "{:C('BAIDU_MAP_AK')}",
+            "CLIENT_BAR_HEIGHT"         :   "{:getClientBarHeight()}"   //手机顶部状态栏高度
+        };
+        MY_SERVER = {
+            "PUBLIC"            :   "__PUBLIC__",
+            "DOMAIN_PATH"       :   "{:C('DOMAIN_PATH')}"
+        };
+    })();
+</script>

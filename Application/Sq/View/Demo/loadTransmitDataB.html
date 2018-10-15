@@ -1,0 +1,20 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_transmit_data_b" data-id="demo_load_transmit_data_b_{$Think.request.id}">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">传递数据测试页B_{$Think.request.id}</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <input type="hidden" name="id" value="{$Think.request.id}">
+                    <p class="content-block-tip m-b-d">传递数据为：{id:{$Think.request.id}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

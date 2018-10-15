@@ -1,0 +1,59 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="login_check" data-id="login_check">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">检测登录</h1>
+            </header>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="contain">
+                        <div class="card">
+                            <div class="card-header row">
+                                <div class="col-100">
+                                    <div class="button button-round check_1_btn">检查登录1</div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">检查用户是否登录</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header row">
+                                <div class="col-100">
+                                    <div class="button button-round check_2_btn">检查登录2</div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">前端(cookie)检查用户是否登录，未登录会跳转到登录页面</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header row">
+                                <div class="col-100">
+                                    <div class="button button-round check_3_btn">检查登录3</div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">后端(session)检查用户是否登录，未登录会跳转到登录页面</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header row">
+                                <div class="col-100">
+                                    <div class="button button-round logout_btn">注销登录</div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">注销用户登录状态</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

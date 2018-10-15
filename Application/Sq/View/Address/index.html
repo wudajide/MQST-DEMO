@@ -1,0 +1,118 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="address_index" data-id="address_index">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">选择地址</h1>
+            </header>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="contain">
+                        <div class="content-block m-t-m">
+                            <p class="content-block-tip m-b-d">选择地区之前，请确保表mqst_area已经成功导入数据库（Public/db/sq_area_data.sql是表mqst_area导入脚本，如需更改表前缀mqst_，请打开脚本文件自行更改）</p>
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="button province_btn">选择省</div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="button city_btn">选择省市</div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="button district_btn">选择省市县</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">省ID：</div>
+                                            <p class="addr-province-id"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">省名称：</div>
+                                            <p class="addr-province-name"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">省编码：</div>
+                                            <p class="addr-province-code"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">市ID：</div>
+                                            <p class="addr-city-id"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">市名称：</div>
+                                            <p class="addr-city-name"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">市编码：</div>
+                                            <p class="addr-city-code"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">县级ID：</div>
+                                            <p class="addr-district-id"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">县级名称：</div>
+                                            <p class="addr-district-name"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title label">县级编码：</div>
+                                            <p class="addr-district-code"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

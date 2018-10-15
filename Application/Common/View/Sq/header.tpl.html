@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><block name="title">MQST-WEBAPP最佳实战方案</block></title>
+    <meta name="Keywords" content="MST,SPA,WEBAPP">
+    <block name="description"><meta name="description" content="MQST-WEBAPP最佳实战方案"></block>
+    <block name="author"><meta name="author" content="sq"/></block>
+    <meta NAME="COPYRIGHT" CONTENT="sq">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Window-target" content="_top">
+    <block name="meta"></block>
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/img/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="__PUBLIC__/ui/css/ui.min.css?v={:C('SQ_VERSION')}">
+    <link rel="stylesheet" href="__PUBLIC__/ui/css/ui-ext.min.css?v={:C('SQ_VERSION')}">
+    <eq name="Think.config.MODULE_COMPRESSION_MODE" value="1">
+        <link rel="stylesheet" href="__PUBLIC__/css/mqst.min.css?v={:C('SQ_VERSION')}">
+        <link rel="stylesheet" href="__PUBLIC__/css/module.min.css?v={:C('SQ_VERSION')}">
+        <else/>
+        <link rel="stylesheet" href="__PUBLIC__/css/mqst.css?v={:C('SQ_VERSION')}">
+        <link rel="stylesheet" href="__PUBLIC__/css/module.css?v={:C('SQ_VERSION')}">
+    </eq>
+    <block name="link"></block>
+    <block name="css"></block>
+    <script src="__PUBLIC__/zepto/zepto.min.js?v={:C('SQ_VERSION')}"></script>
+    <script src="__PUBLIC__/velocity/velocity.min.js?v={:C('SQ_VERSION')}"></script>
+    <include file="Common@Sq/js_var.tpl"/>
+    <eq name="Think.config.MODULE_COMPRESSION_MODE" value="1">
+        <script src="__PUBLIC__/js/config.min.js?v={:C('SQ_VERSION')}"></script>
+        <else/>
+        <script src="__PUBLIC__/js/config.js?v={:C('SQ_VERSION')}"></script>
+    </eq>
+</head>
+

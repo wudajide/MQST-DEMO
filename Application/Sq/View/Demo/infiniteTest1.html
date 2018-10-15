@@ -1,0 +1,23 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_infinite_test1" data-id="demo_infinite_test1">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">普通列表加载</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+                <div class="content-inner">
+                    <p class="content-block-tip m-b-d">需要在class="content"标签中添加infinite-scroll和infinite-scroll-bottom两个class值；</p>
+                    <p class="content-block-tip m-b-d">class="content"标签中data-distance属性用来配置页面滚动到离底部多远时触发infinite事件，默认是50px；</p>
+                    <div class="content-block infinite-test1-data">
+                        {/*---Tpl/infinite/infiniteTest1Data.tpl---*/}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

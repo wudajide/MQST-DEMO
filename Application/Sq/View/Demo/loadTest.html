@@ -1,0 +1,23 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_load_test" data-id="demo_load_test_{$Think.request.id}">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">测试页_{$Think.get.id}</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="content-block">
+                        <a href="{:U('Demo/loadTest',array('id'=>2))}" class="button button-big <eq name="Think.get.id" value="2">button-light</eq> m-b-s">测试页（参数：id=2）</a>
+                        <a href="{:U('Demo/loadTest',array('id'=>3))}" class="button button-big <eq name="Think.get.id" value="3">button-light</eq> m-b-s">测试页（参数：id=3）</a>
+                        <a href="{:U('Demo/loadTest',array('id'=>4))}" class="button button-big <eq name="Think.get.id" value="4">button-light</eq> m-b-s">测试页（参数：id=4）</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

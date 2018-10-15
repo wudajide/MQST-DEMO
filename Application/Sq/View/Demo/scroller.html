@@ -1,0 +1,28 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_scroller" data-id="demo_scroller">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">滚动条</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <h1 class="content-block-title">native类型</h1>
+                    <p class="content-block-tip">原生滚动条（默认）；</p>
+                    <h1 class="content-block-title">js类型</h1>
+                    <p class="content-block-tip">iscroll滚动条，具有滚动实时性，需消耗性能；</p>
+                    <h1 class="content-block-title">auto类型</h1>
+                    <p class="content-block-tip m-b-d">会根据机型系统自动选择适合的滚动类型，系统版本小于4.4.0的安卓设备和系统版本小于6.0.0的ios设备，使用js类型，否则为native类型；</p>
+                    <h1 class="content-block-title">提示</h1>
+                    <p class="content-block-tip m-b-d">设置class="content"标签中自定义属性data-type="native"，可选值：native、js、auto；（默认为：native）</p>
+                    <p class="content-block-tip m-b-d">js和auto类型滚动条需要在class="content"标签内在套一层class="content-inner"标签；（建议所有页面都套一层class="content-inner"标签，参考：顶部渐变）</p>
+                    <p class="content-block-tip m-b-d">为了保证页面在任何滚动条模式下都能使用，强烈建议在任何导致页面高度变化的操作之后都要执行一次 $.refreshScroller() 操作。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

@@ -1,0 +1,44 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_event" data-id="demo_event">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">基础事件</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <p class="content-block-tip m-b-d">1、所有页面中会使用到的事件均应该定义在module.js文件中（路径：Public/js/module.js）；</p>
+                    <p class="content-block-tip m-b-d">2、module.js文件中不建议定义超出以下事件范围的事件函数；</p>
+                    <p class="content-block-tip m-b-d">3、module.js文件中不建议在事件函数外定义全局变量；</p>
+                    <p class="content-block-tip m-b-d">4、如需自行扩展事件，请仔细阅读源码后，在需要的位置使用mqstPageCall函数进行扩展；</p>
+                    <h1 class="content-block-title">下面是事件命名规范说明：</h1>
+                    <p class="content-block-tip m-b-d">[id]：页面中class="page"的属性id的值；</p>
+                    <p class="content-block-tip m-b-d">[sid]：页面中class="swiper-container"的属性data-id的值；</p>
+                    <p class="content-block-tip m-b-d">[mid]：所属模块ID；</p>
+                    <p class="content-block-tip m-b-d">[act]：操作功能名称；</p>
+                    <h1 class="content-block-title">事件定义：</h1>
+                    <p class="content-block-tip m-b-d">pas_[id]：新页面的DOM插入当前页面之后，动画执行之前（参数：e, id, page）；</p>
+                    <p class="content-block-tip m-b-d">pae_[id]：新页面动画执行完毕（参数：e, id, page）；</p>
+                    <p class="content-block-tip m-b-d">bps_[id]：页面切换前触发，该事件在pas前，该事件之后会做一些额外的处理才触发pas事件（参数：e, id, page）；</p>
+                    <p class="content-block-tip m-b-d">pi_[id]：新页面中的组件初始化完毕，该事件只使用函数piInitData进行异步页面初始化，不做事件绑定，所有事件绑定工作均交给pie事件（参数：e, id, page）；</p>
+                    <p class="content-block-tip m-b-d">pie_[id]：新页面中的组件初始化完毕后页面中操作执行事件全部均写在这里（参数：e, id, page）；</p>
+                    <p class="content-block-tip m-b-d">infinite_[id]：上滑加载事件（参数：e, id, page）；</p>
+                    <p class="content-block-tip m-b-d">pse_[id]：native滚动方式时，手指抬起后会每秒执行一次，共5次，注意在本函数内做严谨的逻辑判断，不然会影响性能，一般用于swiper内联页面的上滑加载操作；js滚动方式时，会在滚动停止时执行一次（参数：page）；</p>
+                    <p class="content-block-tip m-b-d">spc_[id]_[sid]：轮播图点击事件（参数：swiper, e, page）；</p>
+                    <p class="content-block-tip m-b-d">sptre_[id]_[sid]：轮播图过渡结束时触发事件（参数：swiper, page）；</p>
+                    <p class="content-block-tip m-b-d">pbb_[id]：goBack函数在执行$.router.back之前会调用该事件，如果返回值为false则不会继续执行$.router.back（参数：page）；</p>
+                    <p class="content-block-tip m-b-d">pcm_[id]：goBack函数中在关闭自定义MODAL事件时的自定义事件，取代goBack函数中的closeModal操作，一般用于在关闭自定义MODAL时，还原MODAL中的内容（参数：page）；</p>
+                    <p class="content-block-tip m-b-d">custom_[mid]_[act]：自定义函数；</p>
+                    <div class="content-block">
+                        <button class="button button-big btn_event_1 m-b-s">演示页_1</button>
+                        <button class="button button-big btn_event_2 m-b-s">演示页_2</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

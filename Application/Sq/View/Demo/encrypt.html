@@ -1,0 +1,39 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_encrypt" data-id="demo_encrypt">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">加密/解密</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="list-block m-t-l">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">待处理数据：</div>
+                                        <div class="item-input">
+                                            <input type="text" name="data" placeholder="请输入待处理数据" value="123456">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="content-block-title">AES算法</h1>
+                    <div class="content-block">
+                        <button class="button button-big btn_aes_js m-b-s">js加解密</button>
+                        <button class="button button-big btn_aes_php m-b-s">php加解密</button>
+                        <button class="button button-big btn_js_aes_php m-b-s">js加密，php解密</button>
+                        <button class="button button-big btn_php_aes_js m-b-s">php加密，js解密</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+

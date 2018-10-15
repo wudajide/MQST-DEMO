@@ -1,0 +1,30 @@
+<extend name="Public/base.ext"/>
+
+<block name="main">
+    <div class="page-group">
+        <div class="page" id="demo_turn_page" data-id="demo_turn_page">
+            <header class="bar bar-nav header">
+                <a class="icon icon-i-back fl back"></a>
+                <h1 class="title">翻页效果</h1>
+            </header>
+            <div class="fixed-top hide"></div>
+            <div class="content">
+                <div class="content-inner">
+                    <h1 class="content-block-title">A标签翻页效果</h1>
+                    <div class="content-block">
+                        <a href="{:U('Demo/turnLeft')}" class="button button-big btn_left_effect m-b-s">左翻页效果</a>
+                        <a href="{:U('Demo/turnRight')}" class="button button-big btn_right_effect m-b-s" data-effect="right">右翻页效果</a>
+                        <a href="{:U('Demo/turnDirect')}" class="button button-big btn_no_effect m-b-s" data-effect="direct">无翻页效果</a>
+                    </div>
+                    <h1 class="content-block-title">js翻页效果</h1>
+                    <div class="content-block">
+                        <button class="button button-big btn_left_effect m-b-s">左翻页效果</button>
+                        <button class="button button-big btn_right_effect m-b-s">右翻页效果</button>
+                        <button class="button button-big btn_no_effect m-b-s">无翻页效果</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+
